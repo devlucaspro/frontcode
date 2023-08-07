@@ -1,0 +1,77 @@
+@import '../../app.scss';
+
+footer {
+  background-color: $purple;
+  border-radius: 20px 20px 0 0;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .texts {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: .7rem;
+
+    h3 {
+      padding: 10px 15px;
+      border: 1px solid $grey;
+      border-radius: 35px;
+      background: linear-gradient(90deg, rgba(248, 248, 248, 0.74) 0%, rgba(248, 248, 248, 0.00) 100%);
+      color: $black;
+      font-family: Poppins;
+      font-size: 22.137px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 100%; /* 22.137px */
+      letter-spacing: -1.107px;
+      text-transform: capitalize;
+    }
+
+    h2 {
+      color: $white;
+      font-size: 29px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 134.5%; /* 40.014px */
+      letter-spacing: -1.487px;
+      width: 100%;
+      max-width: 295.021px;
+    }
+
+    a {
+      color: $grey-s;
+      font-size: 25.5px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 134.5%; /* 34.298px */
+      letter-spacing: -1.275px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  h4 {
+    color: $green;
+    font-family: Poppins;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 131.713px */
+    letter-spacing: -6.586px;
+    text-transform: capitalize;
+    text-align: end;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 3rem;
+
+    h4 {
+      font-size: 55px;
+    }
+  }
+}

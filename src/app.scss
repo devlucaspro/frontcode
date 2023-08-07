@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;700&display=swap');
+// font-family: 'Anton', sans-serif;
+// font-family: 'Poppins', sans-serif;
+
+$black-s: #0B0B0B;
+$black: #141414;
+$white: #F8F8F8;
+$grey: #A4A4A4;
+$grey-s: #4F4F4F;
+$purple: #925FF0;
+$green: #A8ED88;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  background-color: $black-s;
+  color: $white;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
+}
+
+h1 {
+  font-family: 'Anton', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+}
+
+.white {
+  color: $white;
+}
+
+.green {
+  color: $green;
+}

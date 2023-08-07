@@ -1,0 +1,64 @@
+@import '../../app.scss';
+
+.project-h2 {
+  text-align: center;
+  margin-top: 10rem !important;
+  font-size: 30px;
+}
+
+.project-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2rem !important;
+  margin-bottom: 10rem !important;
+  
+  .project {
+    position: relative;
+    transition: all .3s;
+
+    img {
+      width: 100%;
+    }
+
+    div {
+      position: absolute;
+      bottom: 0;
+      z-index: 2;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background-color: $green;
+      padding: 10px 0 10px 0;
+      border-radius: 0 0 13px 13px;
+
+      h4 {
+        color: $black;
+        font-size: 15px;
+      }
+
+      a {
+        color: $black;
+        font-size: 15px;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    &:hover {
+      transform: translateY(-10px);
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+
+    .project {
+      width: 100%;
+    }
+  }
+}
