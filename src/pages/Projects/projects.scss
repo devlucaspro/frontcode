@@ -1,0 +1,61 @@
+@import '../../app.scss';
+
+.project-container {
+  margin-bottom: 5rem !important;
+
+  @media (max-width: 425px) {
+    .h1-project {
+      font-size: 70px;
+    }
+  }
+}
+
+.project-container-text {
+  margin-block: 8rem !important;
+
+  p {
+    color: $grey-s;
+    font-family: Poppins;
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 134.5%; /* 44.791px */
+    letter-spacing: -1.665px;
+    width: 100%;
+    max-width: 646px;
+    margin-bottom: 4rem;
+  }
+
+  .div-btns {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 646px;
+
+    button {
+      border: 1px solid $grey;
+      border-radius: 35px;
+      background: linear-gradient(90deg, rgba(248, 248, 248, 0.74) 0%, rgba(248, 248, 248, 0.00) 100%);
+      padding: 11px 16px;
+      color: $black;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 100%; /* 22.137px */
+      letter-spacing: -1.107px;
+      text-transform: capitalize;
+      cursor: pointer;
+      transition: all .3s;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+    }
+  }
+
+}

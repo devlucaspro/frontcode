@@ -56,7 +56,7 @@ const Home = () => {
         </div>
       </main>
       <DivInline />
-      <Project />
+      <Project h2={true} />
       <Footer />
     </>
   )

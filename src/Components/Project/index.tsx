@@ -1,7 +1,30 @@
+import { useEffect } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Link } from 'react-router-dom';
 import './project.scss'
 
-const Project = () => {
+type ProjectProps = {
+  h2: boolean;
+}
+const Project = ({ h2 }: ProjectProps) => {
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  useEffect(() => {
+    if(window.innerWidth > 768) {
+      gsap.to('.animate', {
+        scrollTrigger: {
+          trigger: '.animate',
+          start: 'center 70%',
+          end: 'center 35%',
+          scrub: true,
+          // markers: true,
+        },
+        y: 70,
+      });
+    }    
+  }, []);
 
   const sampleProjects = [
     {
@@ -10,7 +33,8 @@ const Project = () => {
     },
     {
       title: 'P2',
-      link: '/projects'
+      link: '/projects',
+      class: true,
     },
     {
       title: 'P3',
@@ -18,17 +42,18 @@ const Project = () => {
     },
     {
       title: 'P4',
-      link: '/projects'
+      link: '/projects',
+      class: true,
     },
   ]
 
   return (
     <>
-    <h2 className='container project-h2'>Some Cool <span className="green">Projects</span> for you</h2>
+    {h2 && <h2 className='container project-h2'>Some Cool <span className="green">Projects</span> for you</h2>}
     <div className="container project-container">
       {sampleProjects.map((project, index) => {
         return (
-          <div className='project' key={index}>
+          <div className={`project ${project?.class ? `animate` : ''}`} key={index}>
             <img loading='lazy' src="./assets/proj1.png" alt="Project" />
             <div>
               <h4>{project.title}</h4>

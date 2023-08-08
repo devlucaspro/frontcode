@@ -1,7 +1,48 @@
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './divinline.scss';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const DivInline = () => {
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  useEffect(() => {
+    gsap.from('.texts', {
+      scrollTrigger: {
+        trigger: '.texts',
+        // markers: true,
+        start: '35% 95%',
+      },
+      opacity: 0,
+      x: -10,
+    });
+
+    gsap.from('.icons a', {
+      scrollTrigger: {
+        trigger: '.icons a',
+        // markers: true,
+        start: 'bottom 95%',
+      },
+      duration: 1,
+      opacity: 0,
+      stagger: .8,
+    });
+
+    gsap.from('.card', {
+      scrollTrigger: {
+        trigger: '.card',
+        // markers: true,
+        start: '35% 95%',
+      },
+      duration: 1,
+      opacity: 0,
+      x: 10,
+    });
+  }, []);
+
+
   return (
     <div id='section-2' className='container divInline-container'>
       <div className='texts'>
