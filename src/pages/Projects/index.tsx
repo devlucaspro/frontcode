@@ -28,7 +28,7 @@ const Projects = () => {
         </div>
       </div>
 
-      <Project h2={false} />
+      <Project h2={false} secondFile={true} projectInfo={true} />
       <Footer />
     </>
   )
