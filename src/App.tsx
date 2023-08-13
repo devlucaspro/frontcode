@@ -13,11 +13,9 @@ const App = () => {
   }, [path])
 
   return (
-    <>
-      <AuthProvider>
-        <RoutesApp />
-      </AuthProvider>
-    </>
+    <AuthProvider>
+      <RoutesApp />
+    </AuthProvider>
   )
 }
 

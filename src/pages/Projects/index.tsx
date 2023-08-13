@@ -4,6 +4,7 @@ import Project from "../../Components/Project";
 import './projects.scss';
 
 const Projects = () => {
+
   return (
     <>
       <Header />

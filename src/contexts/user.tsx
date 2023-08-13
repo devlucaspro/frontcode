@@ -1,37 +1,17 @@
 import { createContext, useState } from "react";
 
-export type UserProps = {
-  name: string,
-  token: string,
-};
-
-type AuthContextProps = {
-  user: UserProps | null;
-  login: (user: UserProps) => void;
-  logOut: () => void;
-}
-
-const AuthContext = createContext<AuthContextProps>({} as AuthContextProps);
+const AuthContext = createContext({});
 
 const AuthProvider = ({ children }: { children: React.ReactNode }) => {
-  const [user, setUser] = useState<UserProps | null>(null);
-
-  const login = (user: UserProps) => {
-    setUser(user);
-
-    console.log(user);
-  }
-
-  const logOut = () => {
-    setUser(null);
-    console.log('logOut')
-  }
+  const [user, setUser] = useState<{} | null>(null);
+  const [projects, setProjects] = useState({});
 
   return (
     <AuthContext.Provider value={{ 
       user, 
-      login, 
-      logOut 
+      setUser,
+      projects,
+      setProjects,
     }}>
       <>{children}</>
     </AuthContext.Provider>

@@ -29,20 +29,20 @@ const Project = ({ h2 }: ProjectProps) => {
   const sampleProjects = [
     {
       title: 'P1',
-      link: '/projects'
+      link: '/p1'
     },
     {
       title: 'P2',
-      link: '/projects',
+      link: '/p2',
       class: true,
     },
     {
       title: 'P3',
-      link: '/projects'
+      link: '/p3'
     },
     {
       title: 'P4',
-      link: '/projects',
+      link: '/p4',
       class: true,
     },
   ]
