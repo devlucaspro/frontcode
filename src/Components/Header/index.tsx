@@ -27,7 +27,7 @@ const Header = () => {
   return (
     <header className='container'>
       <Link to='/' className='header-gsap-animation'>
-        <img src="./assets/logo.png" alt="Frontcode Logo" />
+        <img src="/assets/logo.png" alt="Frontcode Logo" />
         <p>Frontcode</p>
       </Link>
       <ul id='menu'>

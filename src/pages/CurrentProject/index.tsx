@@ -22,7 +22,7 @@ const CurrentProject = () => {
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
-    let pathName = path.pathname.split('/');
+    let pathName = path.pathname.split('/project/');
     console.log(pathName[1])
 
     setCurrentPath(pathName[1]);
@@ -46,14 +46,14 @@ const CurrentProject = () => {
     p1: {
       title: 'Ioland',
       description: '<span class="white">Ioland is a website platform for digital products </span> such as NFTs, Collections, Games, and more. There you can find a lot of cool stuff.',
-      image: './assets/p1-1.png',
-      mockup1: './assets/p1-2.png',
+      image: '/assets/p1-1.png',
+      mockup1: '/assets/p1-2.png',
     },
     p2: {
       title: 'Portfolio',
       description: '<span class="white">Here is a portfolio project for you to build and </span> develop, helping you to show your work, skills, and more.',
-      image: './assets/proj-extra-1.png',
-      mockup1: './assets/proj-extra-1.png',
+      image: '/assets/proj-extra-1.png',
+      mockup1: '/assets/proj-extra-1.png',
     },
     p3: {
       title: 'Zagat',
@@ -73,6 +73,7 @@ const CurrentProject = () => {
     title: '',
     description: '',
     image: '',
+    mockup1: '',
   }
 
   return (

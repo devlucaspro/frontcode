@@ -31,23 +31,23 @@ const Project = ({ h2, secondFile, projectInfo }: ProjectProps) => {
   const sampleProjects1 = [
     {
       title: 'P1',
-      link: '/p1',
+      link: '/project/p1',
       cover: './assets/proj1.png',
     },
     {
       title: 'P2',
-      link: '/p2',
+      link: '/project/p2',
       cover: './assets/proj-extra.png',
       class: true,
     },
     {
       title: 'P3',
-      link: '/p3',
+      link: '/project/p3',
       cover: './assets/soon-project.png',
     },
     {
       title: 'P4',
-      link: '/p4',
+      link: '/project/p4',
       cover: './assets/soon-project.png',
       class: true,
     },
@@ -56,23 +56,23 @@ const Project = ({ h2, secondFile, projectInfo }: ProjectProps) => {
   const sampleProjects2 = [
     {
       title: 'P5',
-      link: '/p5',
+      link: '/project/p5',
       cover: './assets/soon-project.png',
     },
     {
       title: 'P6',
-      link: '/p6',
+      link: '/project/p6',
       cover: './assets/soon-project.png',
       class: true,
     },
     {
       title: 'P7',
-      link: '/p7',
+      link: '/project/p7',
       cover: './assets/soon-project.png',
     },
     {
       title: 'P8',
-      link: '/p8',
+      link: '/project/p8',
       cover: './assets/soon-project.png',
       class: true,
     },

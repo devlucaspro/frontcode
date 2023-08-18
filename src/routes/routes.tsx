@@ -3,6 +3,7 @@ import Home from '../pages/Home';
 import Projects from '../pages/Projects';
 import Login from '../pages/Login';
 import CurrentProject from '../pages/CurrentProject';
+import About from '../pages/About';
 
 
 const RoutesApp = () => {
@@ -13,7 +14,8 @@ const RoutesApp = () => {
       <Route path='/projects' element={<Projects />} />
       <Route path='/login' element={<Login />} />
       <Route path='/signup' element={<Login />} />
-      <Route path='/:id' element={<CurrentProject />} />
+      <Route path='/project/:id' element={<CurrentProject />} />
+      <Route path='/about' element={<About />} />
     </Routes>
   )
 }
